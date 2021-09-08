@@ -342,39 +342,46 @@
 <section class="page-section" id="contact">
 <!-- <script src="{{site.baseurl}}/assets/js/vendor/jquery-1.12.4.min.js"></script> -->
 <div id="mc_embed_signup" class="subscribe-form">
-  <form
-    action="/thankyou"
-    id="mc-embedded-subscribe-form"
-    name="mc-embedded-subscribe-form"
-    class="validate"
-    target="_blank"
-  >
-    <div id="mc_embed_signup_scroll">
-      <input type="hidden" value="there" name="FNAME" />
-      <input
-        type="email"
-        value=" "
-        name="EMAIL"
-        class="email"
-        id="mce-EMAIL"
-        placeholder="email address"
-        required
-      />
-      <div style="position: absolute; left: -5000px" aria-hidden="true">
-        <input type="text" name="subscribe_form" tabindex="-1" value="" />
-      </div>
-      <div class="clear">
-        <button
-          type="submit"
-          name="subscribe"
-          id="mc-embedded-subscribe"
-          class="button"
-        >
-          <i class="fab fa-telegram-plane"></i>
-        </button>
-      </div>
-    </div>
-  </form>
+  <form id="mc-embedded-envimetric-form" name="mc-embedded-envimetric-form" class="row g-3 mb-3 needs-validation">
+            <div class="col-md-12 position-relative">
+              <div class="form-outline">
+                <input type="text" class="form-control" name="FirstName" id="FirstName" value="" required />
+                <label for="FirstName" class="form-label text-light">First name</label>
+                <div class="invalid-tooltip">Please provide your first name</div>
+              </div>
+            </div>
+            <div class="col-md-12 position-relative">
+              <div class="form-outline">
+                <input type="text" class="form-control" name="LastName" id="LastName" value="" required />
+                <label for="LastName" class="form-label text-light">Last name</label>
+                <div class="invalid-tooltip">Please provide your last name</div>
+              </div>
+            </div>
+            <div class="col-md-12 position-relative">
+              <div class="form-outline">
+                <input type="text" class="form-control" name="Phone" id="Phone" required />
+                <label for="Phone" class="form-label text-light">Phone number</label>
+                <div class="invalid-tooltip">Please provide a valid phone number.</div>
+              </div>
+            </div>
+            <div class="col-md-12 position-relative">
+              <div class="form-outline">
+                <input type="text" class="form-control" name="Email" id="Email" required />
+                <label for="Email" class="form-label text-light">Work Email</label>
+                <div class="invalid-tooltip">Please provide a valid business email address.</div>
+              </div>
+            </div>
+            <div class="col-md-12 position-relative">
+              <div class="form-outline">
+                <input type="text" class="form-control" name="Organization" id="Organization" required />
+                <label for="Company" class="form-label text-light">Organization</label>
+                <div class="invalid-tooltip">Please provide your organization name.</div>
+              </div>
+            </div>
+            <div class="col-12 pt-2">
+              <button class="btn btn-green" type="submit">Submit form</button>
+            </div>
+          </form>
 </div>
 <script>
   $('#mc-embedded-subscribe-form').submit(function (event) {
