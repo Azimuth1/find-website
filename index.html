@@ -332,7 +332,7 @@
       </div>
     </div>
   </section>
-  
+
   <section class="page-section" id="contact">
     <div class="text-center">
       <h2 class="section-heading text-uppercase">Contact Us</h2>
@@ -394,7 +394,10 @@
           type: 'POST',
           url: 'https://hooks.zapier.com/hooks/catch/4625493/b4jbch0/',
           data: form.serialize(),
-          success: ""
+          success: function (data) {
+            //window.open('/thankyou')
+            window.location = '/thankyou'
+          },
         });
       });
     </script>
